@@ -305,12 +305,14 @@ section#home_section {
 /* Services Section Start */
 
 section#about_section {
-  margin: 6rem auto;
+  margin: 0 auto 6rem;
+  padding-top: 6rem;
 }
 
-.about_container {
+.about_container,
+.pricing_container {
   text-align: center;
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -323,7 +325,7 @@ p.sub-heading {
 
 h3.heading {
   font-size: 2rem;
-  padding: 0 9rem;
+  padding: 0 5rem;
   margin: 3rem 0;
 }
 
@@ -576,7 +578,7 @@ span.writer:after {
 /* Project Section Start */
 
 section#project-section {
-  margin: 3rem 0;
+  padding-top: 1rem;
   z-index: 1000;
   position: relative;
 }
@@ -654,6 +656,66 @@ p.project-text {
 
 /* Project Section End */
 /* pricing-section Start */
+
+section#pricing-section {
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.pricing-card-container {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 2rem;
+}
+
+.pricing-card {
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 10px #e9e9e9;
+  border-radius: 5px;
+}
+
+h4.pricing-card-heading {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+p.pricing-card-text {
+  color: var(--white-gray);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+h3.pricing-amount {
+  margin: 2rem auto;
+  color: var(--sky-blue);
+}
+
+h3.pricing-amount span {
+  font-size: 3.5rem;
+  position: relative;
+}
+
+h3.pricing-amount span:before {
+  content: "";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+  background: url(./img/icons/dollar.svg);
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: in;
+}
+
+ul.pricing-features {
+  line-height: 2;
+  margin-bottom: 2rem;
+  color: var(--white-gray);
+}
 
 /* pricing-section End */
 /* Client Review Section start */
