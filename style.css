@@ -345,14 +345,14 @@ a.btn {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: var(--header-font);
-  font-weight: 500;
   display: inline-block;
   border: 1px solid var(--sky-blue);
   transition: 0.4s ease;
+  font-weight: 700;
 }
 
 a.btn:hover {
-  background: white;
+  background: transparent;
   color: var(--sky-blue);
 }
 
@@ -410,9 +410,9 @@ p.service-card-detail {
   flex-direction: row;
 }
 
-section#skill_section {
+/* section#skill_section {
   /* width: 100%; */
-}
+/*} */
 
 .skill-detail {
   width: 50%;
@@ -573,3 +573,92 @@ span.writer:after {
 }
 
 /* Qoute Section End */
+/* Project Section Start */
+
+section#project-section {
+  margin: 3rem 0;
+  z-index: 1000;
+  position: relative;
+}
+
+.project-wrapper {
+  height: 35rem;
+}
+
+.project-item {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.project-item-banner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.project-item-banner img {
+  height: 100%;
+}
+
+.project-item-details {
+  position: absolute;
+  width: 45%;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+}
+
+p.project-sub-heading {
+  font-size: 1.5rem;
+}
+
+h6.project-heading {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  line-height: 1.3;
+}
+
+p.project-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #a8a8a8;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.project-slide-ctrl-btn {
+  margin-top: 2rem;
+}
+
+.project-slide-ctrl-btn button {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
+  background: none;
+  margin-right: 2rem;
+  border-radius: 50rem;
+}
+
+.project-slide-ctrl-btn button img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+
+/* Project Section End */
+/* pricing-section Start */
+
+/* pricing-section End */
+/* Client Review Section start */
+
+/* Client Review Section End */
+/* Contact Us section Start */
+
+/* Contact Us section End */
