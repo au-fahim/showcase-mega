@@ -321,6 +321,32 @@ p.sub-heading {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--sky-blue);
+  position: relative;
+  top: 0;
+}
+
+
+
+.pricing-sub-heading {
+  padding-top: 2rem;
+}
+
+.pricing-sub-heading:before {left: 50%;transform: translateX(-50%);top: 10px;}
+
+
+.service-sub-heading:before {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+}
+
+p.sub-heading:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background: var(--sky-blue);
+  border-radius: 50rem;
 }
 
 h3.heading {
@@ -420,6 +446,16 @@ p.service-card-detail {
   width: 50%;
   text-align: left;
   margin-right: 3.5rem;
+}
+
+.skill-sub-heading {
+  padding-left: 3.5rem;
+}
+
+.skill-sub-heading:before {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .skill-onner-img {
@@ -616,7 +652,16 @@ section#project-section {
 
 p.project-sub-heading {
   font-size: 1.5rem;
+  padding-left: 3.5rem;
 }
+
+p.project-sub-heading:before {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 
 h6.project-heading {
   font-size: 1.8rem;
@@ -860,6 +905,13 @@ footer#contact-us-section {
 
 p.contact-sub-heading {
   font-size: 1.6rem;
+  padding-left: 3.5rem;
+}
+
+.contact-sub-heading:before {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h4.contact-heading {
@@ -876,6 +928,11 @@ ul.contact-list {
 
 ul.contact-list li:nth-child(even) {
   margin-bottom: 1.5rem;
+}
+
+ul.contact-list li:last-child {
+  font-weight: bold;
+  color: var(--sky-blue);
 }
 
 ul.contact-social-links {
